@@ -267,3 +267,7 @@
     width: 100%;
     display: flex;
 }
+
+.function__form {
+  display: flex;
+}
