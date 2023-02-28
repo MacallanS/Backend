@@ -20,29 +20,64 @@
             </div>
         </div>
     </header>
-    <main class="function">
-        <form class="function__form" action="index.php" method="post">
-            <input class="function__input-a" type="text" name="equation(a)" value="">
-            <input class="function__input-b" type="text" name="equation(b)" value="">
-            <p>x =</p>
-            <input class="function__input-c" type="text" name="equation(c)" value="">
+    <main class="function__4">
+        <form action="index.php" method="post">
+            <input class="function__input" type="text" name="equation" value="">
             <button class="form__button" type="submit">
                 Subscribe
             </button>
         </form>
+        
         <?php  
-            if (isset($_POST['equation(a)'])) {
-                $a = $_POST['equation(a)'];
+            if (isset($_POST['equation'])) {
+                $str = $_POST['equation'];
+                $str = preg_replace("/\s+/", "", $str);
+                if (strlen($str)>5) {
+                    echo 'Введите однозначное число';
+                }elseif (strlen($str)>0) {
+                    for( $i = 0 ; $i < strlen($str); $i=$i+1){
+                        if ($str[$i]=='-'){
+                            $index = $i;
+                            $a='-';
+                        }
+                        if ($str[$i]=='*'){
+                            $index = $i;
+                            $a='*';
+                        }
+                        if ($str[$i]=='/'){
+                            $index = $i;
+                            $a='/';
+                        }
+                        if ($str[$i]=='+'){
+                            $index = $i;
+                            $a='+';
+                        }
+                        if ($str[$i]=='='){
+                            $index_equally = $i;
+                        }
+                    }
+                    $difference=$index_equally - $index-1;
+                    $number = (strlen($str)) - $index_equally;
+                    if ($difference==1){
+                        $b=$str[$number];
+                    }
+                    $c=$str[$index_equally+1];
+                    $b=(int)$b;
+                    $c=(int)$c;
+                    if ($a=='*'){
+                        echo $c / $b;
+                    }
+                    if ($a=='+'){
+                        echo $c - $b;
+                    }
+                    if ($a=='/'){
+                        echo $c * $b;
+                    }
+                    if ($a=='-'){
+                        echo $c + $b;
+                    }
+                };
             };
-            if (isset($_POST['equation(b)'])) {
-                $b = $_POST['equation(b)'];
-            };
-            if (isset($_POST['equation(c)'])) {
-                $c = $_POST['equation(c)'];
-            };
-            echo $a;
-            echo $b;
-            echo $c;
         ?>
     </main>
     <footer class="footer">
