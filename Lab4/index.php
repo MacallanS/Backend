@@ -25,12 +25,9 @@
             <form action="index.php" method="post">
                 <fieldset class="forma__name">
                     <legend class="name__text">
-                        Ваше имя <span class="zvez">*</span>
+                        Введите своё уравнение <span class="zvez">*</span>
                     </legend>
                     <label class="name__label">
-                        <span class="visually-hidden">
-                        Type Your Name
-                        </span>
                         <input class="function__input" placeholder="X/8=6" type="" name="equation" value="">
                     </label>
                 </fieldset>
