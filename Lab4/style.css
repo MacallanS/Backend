@@ -57,184 +57,216 @@
 
 
 .registration {
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;
-    padding-bottom: 80px;
-    padding-top: 40px;
-  }
-  
-  .name__input {
-    border-radius: 40px;
-    padding: 10px;
-    padding-left: 60px;
-    margin: 18px;
-    background-color: #fce5e7;
-    border: solid;
-  }
-  
-  .numder__input {
-    border-radius: 40px;
-    padding: 10px;
-    padding-left: 60px;
-    margin: 9px;
-    background-color: #fce5e7;
-    border: solid;
-  }
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 80px;
+  padding-top: 40px;
+}
 
-  .numder__comment {
-    border-radius: 40px;
-    padding: 139px;
-    padding-left: 60px;
-    margin: 9px;
-    background-color: #fce5e7;
-    border: solid;
-    padding-top: 10px;
-    padding-left: 29px;
-  }
-  
-  .days__input {
-    margin: 37px;
-    margin-bottom: 13px;
-    margin-top: 13px;
-    background-color: #fce5e7;
-    border: solid;
-  }
-  
-  .forma__name {
-    border: 0 none;
-  }
-  
-  .forma__sex {
-    border: 0 none;
-  } 
-  
-  .phone__numder {
-    border: 0 none;
-  }
-  
-  .form__address {
-    border: 0 none;
-  }
-  
-  .form__week {
-    border: 0 none;
-  } 
-  
-  .forma__sex {
-    display: flex;
-  }
-  
-  .sex__man {
-    margin: 20px;
-    font-size: 20px;
-  }
-  
-  .sex__woman {
-    margin: 20px;
-    font-size: 20px;
-  }
-  
-  .phone__email {
-    min-width: 400px;
-  }
-  
-  
-  
-  .address__choice {
-    border-radius: 40px;
-    padding: 10px;
-    padding-left: 80px;
-    padding-right: 80px;
-    margin: 18px;
-    background-color: #fce5e7;
-    border: solid;
-  }
-  
-  .form__button {
-    background-color: #FF2625;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 160%;
-    color: #FFFFFF;
-    border: 0;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    padding-left: 39px;
-    padding-right: 43px;
-    border-radius: 40px;
-    max-height: 58px;
-    margin-left: 317px;
-  }
-  
-  .name__text {
-    font-style: italic;
-    font-weight: 700;
-    font-size: 30px;
-  }
-  
-  .sex__text {
-    font-style: italic;
-    font-weight: 700;
-    font-size: 30px;
-  }
-  
-  .numder__text {
-    font-style: italic;
-    font-weight: 700;
-    font-size: 30px;
-  }
-  
-  .address__text {
-    font-style: italic;
-    font-weight: 700;
-    font-size: 30px;
-  }
-  
-  .get__link {
-    text-decoration: none;
-    background-color: #fce5e7;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 160%;
-    border: 0;
-    padding: 40px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    border-radius: 28px;
-    max-height: 36px;
-    margin-left: 315px;
-    margin-left: 642px;
-  }
+.name__input {
+  border-radius: 40px;
+  padding: 10px;
+  padding-left: 60px;
+  margin: 18px;
+  background-color: #fce5e7;
+  border: solid;
+}
 
-  
-  .forma__name {
-    margin-bottom: 15px;
-  }
-  
-  .forma__sex {
-    margin-bottom: 15px;
-  }
-  
-  .sex__radio {
-    display: flex;
-  }
-  
-  .sex__input {
-    position: absolute;
-    margin-left: 107px;
-    margin-top: 25px;
-  }
-  
-  
-  .form__address {
-    margin-bottom: 15px;
-  }
-  
-  .form__week {
-    margin-bottom: 15px;
-  }
-  
+.numder__input {
+  border-radius: 40px;
+  padding: 10px;
+  padding-left: 60px;
+  margin: 9px;
+  background-color: #fce5e7;
+  border: solid;
+}
+
+.numder__comment {
+  border-radius: 40px;
+  padding: 139px;
+  padding-left: 60px;
+  margin: 9px;
+  background-color: #fce5e7;
+  border: solid;
+  padding-top: 10px;
+  padding-left: 29px;
+}
+
+.days__input {
+  margin: 37px;
+  margin-bottom: 13px;
+  margin-top: 13px;
+  background-color: #fce5e7;
+  border: solid;
+}
+
+.forma__name {
+  border: 0 none;
+}
+
+.forma__sex {
+  border: 0 none;
+} 
+
+.phone__numder {
+  border: 0 none;
+}
+
+.form__address {
+  border: 0 none;
+}
+
+.form__week {
+  border: 0 none;
+} 
+
+.forma__sex {
+  display: flex;
+}
+
+.sex__man {
+  margin: 20px;
+  font-size: 20px;
+}
+
+.sex__woman {
+  margin: 20px;
+  font-size: 20px;
+}
+
+.phone__email {
+  min-width: 400px;
+}
+
+
+
+.address__choice {
+  border-radius: 40px;
+  padding: 10px;
+  padding-left: 80px;
+  padding-right: 80px;
+  margin: 18px;
+  background-color: #fce5e7;
+  border: solid;
+}
+
+.form__button {
+  background-color: #FF2625;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 160%;
+  color: #FFFFFF;
+  border: 0;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-left: 39px;
+  padding-right: 43px;
+  border-radius: 40px;
+  max-height: 58px;
+  margin-left: 471px;
+  margin-top: 58px;
+  margin-bottom: 288px;
+}
+
+.name__text {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 20px;
+  margin-left: 456px;
+  padding-top: 146px;
+}
+
+.sex__text {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.numder__text {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.address__text {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.get__link {
+  text-decoration: none;
+  background-color: #fce5e7;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 160%;
+  border: 0;
+  padding: 40px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  border-radius: 28px;
+  max-height: 36px;
+  margin-left: 315px;
+  margin-left: 642px;
+}
+
+
+.forma__name {
+  margin-bottom: 15px;
+}
+
+.forma__sex {
+  margin-bottom: 15px;
+}
+
+.sex__radio {
+  display: flex;
+}
+
+.sex__input {
+  position: absolute;
+  margin-left: 107px;
+  margin-top: 25px;
+}
+
+
+.form__address {
+  margin-bottom: 15px;
+}
+
+.form__week {
+  margin-bottom: 15px;
+}
+
+
+
+
+
+.function_4__wrapper {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+
+.function__input {
+  margin-left: 449px;
+  height: 39px;
+  width: 231px;
+  border-radius: 40px;
+  padding-left: 10px;
+  margin-top: 14px;
+}
+
+.function_4__php {
+  position: absolute;
+  left: 460px;
+  top: 250px;
+}
+
+
+
   
 
 .footer {
