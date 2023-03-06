@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href='./style.css'>
     <?php $end = 'Работу сделал Хаметов Артем' ?>
 </head>
+
 <body>
     <header class="header">
         <div class="header__wrapper">
@@ -57,8 +59,8 @@
                             <button class="pins__location" value="=">=</button>
                             <button class="pins__location" value="+">+</button>
                         </li>
-                        
-                    </ul>       
+
+                    </ul>
                 </form>
             </div>
         </section>
@@ -67,10 +69,11 @@
         <div class="footer__wrapper">
             <div class="footer__php">
                 <?php
-                    echo  $end;       
+                echo  $end;
                 ?>
             </div>
         </div>
     </footer>
 </body>
+
 </html>
