@@ -134,16 +134,16 @@
                 </div>
             </div>
         </section>
-       
-    </main>
-    <footer class="footer">
-        <div class="footer__wrapper">
-            <div class="footer__php">
-                <?php
-                    echo  $end;       
-                ?>
+        <footer class="footer">
+            <div class="footer__wrapper">
+                <div class="footer__php">
+                    <?php
+                        echo  $end;       
+                    ?>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
+    </main>
+    
 </body>
 </html>
