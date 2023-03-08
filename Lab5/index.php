@@ -25,37 +25,61 @@
             <div class="info__wrapper">
                 <form method="post" class="info__calculator">
                     <div class="calculator__div">
-                        <input class="calculator__input" type="text">
-                        <input class="calculator__result" type="text" disabled>
+                        <label class="calculator__label">
+                            <input class="calculator__input" placeholder="123+123" type="" name="equation" value="">    
+                        </label>
+                        <?php $result='246' ?>
+
+                        <div class="calculator__result">
+                            <?php
+                            if (isset($_POST['equation'])) {
+                                $expression=$_POST['equation'];
+                                for ($i = 0 ; $i <= strlen($expression); $i++);
+                                    if (substr_count($expression, '+')) {   
+                                        list($variable1, $variable2) = explode("+", $expression);
+                                        echo $variable1+$variable2;
+                                    }elseif (substr_count($expression, '*')) {
+                                        list($variable1, $variable2) = explode("*", $expression);
+                                        echo $variable1*$variable2;
+                                    }elseif (substr_count($expression, '-')) {
+                                        list($variable1, $variable2) = explode("-", $expression);
+                                        echo $variable1-$variable2;
+                                    }elseif (substr_count($expression, '*')) {
+                                        list($variable1, $variable2) = explode("*", $expression);
+                                        echo $variable1*$variable2;
+                                    }
+                            };  
+                            ?>
+                        </div>
                     </div>
                     <ul class="calculator__pins">
                         <li>
-                            <button class="pins__bracket" value="(">(</button>
                             <button class="pins__bracket" value=")">)</button>
+                            <button class="pins__bracket" value="(">(</button>
                         </li>
                         <li>
-                            <button class="pins__location" value="9">9</button>
-                            <button class="pins__location" value="8">8</button>
-                            <button class="pins__location" value="7">7</button>
-                            <button class="pins__location" value="/">/</button>
+                            <button class="pins__location" id="js-add-to-cart" value="9">9</button>
+                            <button class="pins__location" id="js-add-to-cart" value="8">8</button>
+                            <button class="pins__location" id="js-add-to-cart" value="7">7</button>
+                            <button class="pins__location" id="js-add-to-cart" value="/">/</button>
                         </li>
                         <li>
-                            <button class="pins__location" value="6">6</button>
-                            <button class="pins__location" value="5">5</button>
-                            <button class="pins__location" value="4">4</button>
-                            <button class="pins__location" value="*">*</button>
+                            <button class="pins__location" id="js-add-to-cart" value="6">6</button>
+                            <button class="pins__location" id="js-add-to-cart" value="5">5</button>
+                            <button class="pins__location" id="js-add-to-cart" value="4">4</button>
+                            <button class="pins__location" id="js-add-to-cart" value="*">*</button>
                         </li>
                         <li>
-                            <button class="pins__location" value="3">3</button>
-                            <button class="pins__location" value="2">2</button>
-                            <button class="pins__location" value="1">1</button>
-                            <button class="pins__location" value="-">-</button>
+                            <button class="pins__location" id="js-add-to-cart" value="3">3</button>
+                            <button class="pins__location" id="js-add-to-cart" value="2">2</button>
+                            <button class="pins__location" id="js-add-to-cart" value="1">1</button>
+                            <button class="pins__location" id="js-add-to-cart" value="-">-</button>
                         </li>
                         <li>
-                            <button class="pins__location" value="0">0</button>
-                            <button class="pins__location-text" value="clear">AC</button>
-                            <button class="pins__location" value="=">=</button>
-                            <button class="pins__location" value="+">+</button>
+                            <button class="pins__location" id="js-add-to-cart" value="0">0</button>
+                            <button class="pins__location-text"  value="clear">AC</button>
+                            <button class="pins__location" id="js-add-to-cart" value="=" type="submit">=</button>
+                            <button class="pins__location" id="js-add-to-cart" value="+">+</button>
                         </li>
                     </ul>
                 </form>
