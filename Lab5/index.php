@@ -56,21 +56,21 @@
                             <button class="pins__bracket" >(</button>
                         </li>
                         <li>
-                            <button class="pins__location"  >9</button>
-                            <button class="pins__location"  >8</button>
                             <button class="pins__location"  >7</button>
+                            <button class="pins__location"  >8</button>
+                            <button class="pins__location"  >9</button>
                             <button class="pins__location"  >/</button>
                         </li>
                         <li>
-                            <button class="pins__location"  >6</button>
-                            <button class="pins__location"  >5</button>
                             <button class="pins__location"  >4</button>
+                            <button class="pins__location"  >5</button>
+                            <button class="pins__location"  >6</button>
                             <button class="pins__location"  >*</button>
                         </li>
                         <li>
-                            <button class="pins__location"  >3</button>
-                            <button class="pins__location"  >2</button>
                             <button class="pins__location"  >1</button>
+                            <button class="pins__location"  >2</button>
+                            <button class="pins__location"  >3</button>
                             <button class="pins__location"  >-</button>
                         </li>
                         <li>
