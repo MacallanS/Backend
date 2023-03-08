@@ -44,7 +44,7 @@
                                         echo $variable1-$variable2;
                                     }elseif (substr_count($expression, '/')) {
                                         list($variable1, $variable2) = explode("/", $expression);
-                                        echo $variable1*$variable2;
+                                        echo $variable1/$variable2;
                                     }
                             };  
                             ?>
