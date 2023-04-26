@@ -32,21 +32,9 @@
                             <?php
                             if (isset($_POST['equation'])) {
                                 $expression=$_POST['equation'];
-                                for ($i = 0 ; $i <= strlen($expression); $i++);
-                                    if (substr_count($expression, '+')) {   
-                                        list($variable1, $variable2) = explode("+", $expression);
-                                        echo $variable1+$variable2;
-                                    }elseif (substr_count($expression, '*')) {
-                                        list($variable1, $variable2) = explode("*", $expression);
-                                        echo $variable1*$variable2;
-                                    }elseif (substr_count($expression, '-')) {
-                                        list($variable1, $variable2) = explode("-", $expression);
-                                        echo $variable1-$variable2;
-                                    }elseif (substr_count($expression, '/')) {
-                                        list($variable1, $variable2) = explode("/", $expression);
-                                        echo $variable1/$variable2;
-                                    }
                             };  
+                            require_once('./calculator.php');
+                            echo calculator($expression);
                             ?>
                         </div>
                     </div>
